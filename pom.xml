@@ -14,4 +14,20 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.20.0</version>
+        </dependency>
+
+        <!-- ttps://search.maven.org/artifact/com.thegoate/testng/0.15.17.202207222244/jar -->
+        <dependency>
+            <groupId>com.thegoate</groupId>
+            <artifactId>testng</artifactId>
+            <version>0.15.8.202208111012</version>
+        </dependency>
+    </dependencies>
+
 </project>
