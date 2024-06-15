@@ -1,6 +1,6 @@
 package Tests.SauceLabsTests;
 
-import Pages.SauceLabsPages.LoginPage;
+
 import Tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
