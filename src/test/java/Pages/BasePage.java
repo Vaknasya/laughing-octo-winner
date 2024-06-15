@@ -1,5 +1,6 @@
 package Pages;
 
+import Pages.SauceLabsPages.MarketPage;
 import allAboutDriver.WebDriverSingleton;
 import org.openqa.selenium.WebDriver;
 
@@ -13,6 +14,7 @@ public abstract class BasePage {
     public void open(String url) {
         instance.get(url);
     }
+
 
 
 

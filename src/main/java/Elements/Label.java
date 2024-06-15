@@ -8,8 +8,4 @@ public class Label extends BaseElement{
         super(locator, name);
     }
 
-    private final Label inputUsernameField =
-            new Label(By.cssSelector("#user-name"), "lOGIN FIELD");
-
-
 }
