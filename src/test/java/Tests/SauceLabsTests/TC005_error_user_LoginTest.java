@@ -10,6 +10,7 @@ public class TC005_error_user_LoginTest extends BaseTest {
     @Test
     public void errorUserLogin() {
         loginPage.open(loginPageLink);
+        Assert.assertTrue(loginPage.isLoginCredentialsVisible());
 
         loginPage.sendLogin(errorUserLogin);
         loginPage.sendPassword(commonPassword);

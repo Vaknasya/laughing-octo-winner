@@ -10,6 +10,7 @@ public class TC004_performance_glitch_user_LoginTest extends BaseTest {
     @Test
     public void performance_glitch_user_Login() {
         loginPage.open(loginPageLink);
+        Assert.assertTrue(loginPage.isLoginCredentialsVisible());
 
         loginPage.sendLogin(performanceGlitchedUserLogin);
         loginPage.sendPassword(commonPassword);

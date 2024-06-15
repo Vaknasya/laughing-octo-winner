@@ -11,6 +11,7 @@ public class TC003_problem_user_LoginTest extends BaseTest {
     @Test
     public void problem_user_login() {
         loginPage.open(loginPageLink);
+        Assert.assertTrue(loginPage.isLoginCredentialsVisible());
 
         loginPage.sendLogin(porblemUserLogin);
         loginPage.sendPassword(commonPassword);
