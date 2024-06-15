@@ -25,6 +25,11 @@ public class LoginPage extends BasePage {
        loginPasswordField.sendKeys(password);
    }
 
+   public void sendLoginData(String username, String password) {
+       loginUsernameField.sendKeys(username);
+       loginPasswordField.sendKeys(password);
+   }
+
    protected final Button loginButton =
            new Button(By.cssSelector("#login-button"), "Login button");
    public void clickLoginBtn() {
@@ -36,7 +41,13 @@ public class LoginPage extends BasePage {
    public boolean isLoginCredentialsVisible(){
        return loginCredentials.isDisplayed();
    }
-   public boolean isShoppingCartVisible(){
-       return marketPage.isShoppingCartIconPresent();
+
+   private final Label loginErrorField =
+           new Label(By.xpath("//div[contains(@class, \"error\")]"), "Login error field");
+   public boolean isLoginErrorVisible(){
+       return loginErrorField.isDisplayed();
+   }
+   public String getLoginErrorMessage(){
+       return loginErrorField.getText();
    }
 }
